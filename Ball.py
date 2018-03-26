@@ -162,6 +162,8 @@ class Ball(pygame.sprite.Sprite):
                 self.rect.centery = self.y + self.radius
                 # angle (vers le haut au hasard)
                 self.angle  = math.radians(random.choice([random.randrange(30, 60), random.randrange(120, 150), -random.randrange(30, 60), -random.randrange(120, 150)]))
+            else:
+                Config.Sounds['bat'].play()
 
     # collisions avec une brique
     def bricksBounce(self):
@@ -178,6 +180,7 @@ class Ball(pygame.sprite.Sprite):
                     # un bonus?
                     Bonus.randomBonus(posb)
                 else:
+                    Config.Sounds['brik'].play()
                     self.checkBorder(Config.bricks[i].rect)
                     if Config.bricks[i].hits > 0:
                         # on peut casser la brique

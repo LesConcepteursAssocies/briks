@@ -55,10 +55,14 @@ def InitBG(bgname=None):
 # --------------------------------------------------------------------------------
 # initialisation des sons
 def InitSounds():
-    Config.Sounds['intro'] = pygame.mixer.Sound(os.path.join(Config.path_app, 'sounds', 'ArkanoidMainTheme.ogg'))
+    Config.Sounds['intro']   = pygame.mixer.Sound(os.path.join(Config.path_app, 'sounds', 'ArkanoidMainTheme.ogg'))
+    Config.Sounds['intro-2'] = pygame.mixer.Sound(os.path.join(Config.path_app, 'sounds', 'intro2.ogg'))
+    Config.Sounds['bat']     = pygame.mixer.Sound(os.path.join(Config.path_app, 'sounds', 'ping1.ogg'))
+    Config.Sounds['brik']    = pygame.mixer.Sound(os.path.join(Config.path_app, 'sounds', 'pong1.ogg'))
     Config.Sounds['intro'].set_volume((Config.Volume/100))
-    Config.Sounds['bat']   = pygame.mixer.Sound(os.path.join(Config.path_app, 'sounds', 'ping1.ogg'))
-    Config.Sounds['intro'].set_volume((Config.Volume/100))
+    Config.Sounds['intro-2'].set_volume((Config.Volume/100))
+    Config.Sounds['bat'].set_volume((Config.Volume/100))
+    Config.Sounds['brik'].set_volume((Config.Volume/100))
 
 # --------------------------------------------------------------------------------
 # Init/Reset du jeu

@@ -48,6 +48,8 @@ def event_handler():
                 # RàZ du jeu
                 Tools.GameInit()
             if event.key == K_SPACE:
+                Config.Sounds['intro'].stop()
+                Config.Sounds['intro-2'].play()
                 # on lance les balles
                 Ball.Ballsmoving()
                 if Config.player.laserMode:
