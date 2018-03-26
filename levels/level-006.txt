@@ -1,0 +1,47 @@
+#
+# Un casse-briques (hommage à Arkanoid)
+#
+# 01/2018 PG (pguillaumaud@april.org)
+#
+# Généré le 01/03/2018 à 12h07 par level-editor
+#
+# .: ligne vide
+# 0, ., ' ': brique vide (espace vide)
+# 1: brique grise       ( 50 pts)
+# 2: brique orange      ( 60 pts)
+# 3: brique bleue       ( 70 pts)
+# 4: brique verte       ( 80 pts)
+# 5: brique rouge       ( 90 pts)
+# 6: brique bleu fonçé  (100 pts)
+# 7: brique violette    (110 pts)
+# 8: brique jaune       (120 pts)
+# 9: brique blanche     (130 pts)
+# A: brique or          (incassable)
+# B: brique métal       ( 50 pts)
+#
+.
+.
+.
+6050403040506
+6050403040506
+6050403040506
+6050403040506
+6050403040506
+6050403040506
+60A8A8A8A8A06
+6050403040506
+6050403040506
+6050403040506
+6050403040506
+8080A080A0808
+6050403040506
+.
+.
+.
+.
+.
+.
+.
+.
+.
+# eof
