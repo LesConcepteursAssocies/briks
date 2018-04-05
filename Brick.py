@@ -31,7 +31,7 @@ import Tools
 #
 class Brick(pygame.sprite.Sprite):
     def __init__(self, x, y, bn):
-        super().__init__()
+        pygame.sprite.Sprite.__init__(self)
         # le sprite
         self.img, self.rect = Tools.load_png('brik-{0:02X}'.format(bn)+'.png')
         # et le masque

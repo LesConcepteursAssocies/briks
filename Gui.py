@@ -31,7 +31,7 @@ import Tools
 # les boutons
 class Button(pygame.sprite.Sprite):
     def __init__(self, pos, file_off, file_on):
-        super().__init__()
+        pygame.sprite.Sprite.__init__(self)
         if pos is not None:
             # position du centre du bouton
             (self.cx, self.cy) = pos

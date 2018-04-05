@@ -32,7 +32,7 @@ import Bonus
 class Ball(pygame.sprite.Sprite):
     # sbb = sprite en mode MégaBall (black ball)
     def __init__(self, pos, speed, sname, sbb):
-        super().__init__()
+        pygame.sprite.Sprite.__init__(self)
         # les sprites
         self.imgn, self.rectn = Tools.load_png(sname)
         self.imgm, self.rectm = Tools.load_png(sbb)

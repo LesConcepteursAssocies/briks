@@ -28,7 +28,7 @@ import Tools
 # --------------------------------------------------------------------------------
 class SpriteSheet(pygame.sprite.Sprite):
     def __init__(self, filename, cols, rows, pos, trp):
-        super().__init__()
+        pygame.sprite.Sprite.__init__(self)
         # la page
         self.sheet, self.srect = Tools.load_png(filename)
         # taille (en nombre de sprites)

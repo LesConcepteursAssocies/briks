@@ -73,7 +73,7 @@ class Boss(pygame.sprite.Sprite):
     # bras_G (spritessheets,cols,rows): bras gauche (boss doh)
     # bras_D (spritessheets,cols,rows): bras droit (boss doh)
     def __init__(self, sname, sname_hit, sname_death, bras_G, bras_D):
-        super().__init__()
+        pygame.sprite.Sprite.__init__(self)
         self.setPos()
         self.sps_n   = Spritesheet.SpriteSheet(sname[0], sname[1], sname[2], (self.x, self.y), True)
         self.sps_h   = Spritesheet.SpriteSheet(sname_hit[0], sname_hit[1], sname_hit[2], (self.x, self.y), True)

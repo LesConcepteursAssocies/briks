@@ -30,7 +30,7 @@ import Tools
 class Bat(pygame.sprite.Sprite):
     # on donne 3 sprites: normal, petite et grande taille
     def __init__(self, sname, sname_large, sname_small):
-        super().__init__()
+        pygame.sprite.Sprite.__init__(self)
         # les sprites
         self.imgn, self.rectn = Tools.load_png(sname)
         self.imgl, self.rectl = Tools.load_png(sname_large)

@@ -29,7 +29,7 @@ import Tools
 # --------------------------------------------------------------------------------
 class Border(pygame.sprite.Sprite):
     def __init__(self):
-        super().__init__()
+        pygame.sprite.Sprite.__init__(self)
         # les sprites
         self.imgL, self.rectL = Tools.load_png('bord-gauche.png')
         self.imgT, self.rectT = Tools.load_png('bord-haut.png')
